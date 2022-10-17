@@ -41,6 +41,7 @@ dependencies:
   google_fonts: ^3.0.1
   lottie: ^1.4.3
   rive: ^0.9.1
+  typewritertext: ^1.8.0
 
 dev_dependencies:
   flutter_lints: ^2.0.0
@@ -60,6 +61,7 @@ flutter:
   assets:
     - assets/anim/83435-happy-halloween-animation-background.json
     - assets/anim/monster.riv
+    - assets/anim/monsterAlt.riv
     - assets/mandm.jpg
     - assets/
   #   - images/a_dot_ham.jpeg

@@ -11,7 +11,7 @@ Widget buildItem(String name, String asset, double width, double height) {
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(asset),
-                fit: BoxFit.cover,
+                fit: BoxFit.contain,
               ),
               shape: BoxShape.rectangle,
               color: Colors.transparent,
