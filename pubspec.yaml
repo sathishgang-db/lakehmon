@@ -61,6 +61,8 @@ flutter:
   assets:
     - assets/anim/83435-happy-halloween-animation-background.json
     - assets/anim/monster.riv
+    - assets/anim/halloween-pumpkin-candy.json
+    - assets/anim/energy_bar.riv
     - assets/anim/monsterAlt.riv
     - assets/mandm.jpg
     - assets/

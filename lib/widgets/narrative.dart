@@ -34,7 +34,7 @@ Widget buildNarrative(int acceptedData) {
         ));
   } else if (acceptedData > 0 && acceptedData <= 70) {
     return const Text(
-      "Good job! Keep going to unlock AI powers! 🎉",
+      "Ok! Keep feeding me to unlock AI powers! 🎉",
       style: TextStyle(
         letterSpacing: 2.0,
         color: Colors.white,
@@ -45,7 +45,7 @@ Widget buildNarrative(int acceptedData) {
   }
   else if (acceptedData > 70 && acceptedData <= 100) {
     return const Text(
-      "Wonderful! Select 1 Task I can do for you! 🧪",
+      "Alright! Select 1 task I can do for you! 🧪",
       style: TextStyle(
         letterSpacing: 2.0,
         color: Colors.white,
@@ -56,7 +56,7 @@ Widget buildNarrative(int acceptedData) {
   }
   else {
     return const Text(
-      "You are the best! 💖 Select 1 Task I can do for you! 🧪",
+      "You are the best! 💖 Select a task I can do for you! ✅",
       style: TextStyle(
         letterSpacing: 2.0,
         color: Colors.white,
@@ -65,5 +65,4 @@ Widget buildNarrative(int acceptedData) {
       ),
     );
   }
-
 }

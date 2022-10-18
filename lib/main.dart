@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:lakehmon/monster_screen.dart';
+// import 'package:lakehmon/monster_screen.dart';
 import 'package:lottie/lottie.dart';
+
+import 'loading_screen.dart';
 
 void main() => runApp(const GetMaterialApp(
       home: MyApp(),
@@ -54,7 +56,7 @@ class MyApp extends StatelessWidget {
         floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.deepOrangeAccent,
-        onPressed: () => Get.to(() => const MonsterScreen()),
+        onPressed: () => Get.to(() => const LoadingScreen()),
           child: const AvatarGlow(
             glowColor: Colors.orange,
             endRadius: 90.0,
