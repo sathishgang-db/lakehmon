@@ -25,25 +25,26 @@ class LoadingScreen extends StatelessWidget {
             child: SizedBox(
               width: MediaQuery.of(context).size.width * 0.5,
               height: MediaQuery.of(context).size.height * 0.5,
-              child: Lottie.asset("assets/anim/halloween-pumpkin-candy.json"),),
+              child: Lottie.asset("assets/anim/halloween-pumpkin-candy.json"),
+            ),
           ),
           DefaultTextStyle(
-      style: const TextStyle(
-        color: Colors.white,
-        letterSpacing: 2.0,
-        fontSize: 30,
-        fontWeight: FontWeight.bold,
-      ),
-      child: AnimatedTextKit(
-        pause: const Duration(milliseconds: 500),
-        isRepeatingAnimation: false,
-        animatedTexts: [
-          TypewriterAnimatedText('Entering Lakehouse ...'),
-          TypewriterAnimatedText('Hold on to your candy!'),
-          TypewriterAnimatedText('Lakehmon is on the loose...'),
-        ],
-      ),
-    ),
+            style: const TextStyle(
+              color: Colors.white,
+              letterSpacing: 2.0,
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+            ),
+            child: AnimatedTextKit(
+              pause: const Duration(milliseconds: 700),
+              isRepeatingAnimation: false,
+              animatedTexts: [
+                TypewriterAnimatedText('Entering Lakehouse ...'),
+                TypewriterAnimatedText('Hold on to your candy!'),
+                TypewriterAnimatedText('Lakehmon is on the loose...'),
+              ],
+            ),
+          ),
         ],
       ),
     );

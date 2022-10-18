@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 
 Widget buildNarrative(int acceptedData) {
-  if (acceptedData == 0) {
+  if (acceptedData == 10) {
     return DefaultTextStyle(
       style: const TextStyle(
         color: Colors.white,

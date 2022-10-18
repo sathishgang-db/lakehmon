@@ -137,7 +137,7 @@ class _MonsterScreenState extends State<MonsterScreen> {
                         setState(() {
                           acceptedData += data;
                           buildNarrative(acceptedData);
-                          if (data > 0) {
+                          if (data >= 0) {
                             _happy?.value = true;
                             _energy?.value = acceptedData.toDouble();
                             // sleep(const Duration(seconds:1));
@@ -246,7 +246,7 @@ class _MonsterScreenState extends State<MonsterScreen> {
           backgroundColor: Colors.orange,
           onPressed: () {
             setState(() {
-              acceptedData = 0;
+              acceptedData = 10;
               _happy?.value = false;
               _color?.value = 1.0;
               _energy?.value = 10.0;
