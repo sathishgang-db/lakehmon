@@ -1,7 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 
-
 Widget buildNarrative(int acceptedData) {
   if (acceptedData == 10) {
     return DefaultTextStyle(
@@ -42,10 +41,9 @@ Widget buildNarrative(int acceptedData) {
         fontWeight: FontWeight.bold,
       ),
     );
-  }
-  else if (acceptedData > 70 && acceptedData <= 100) {
+  } else if (acceptedData > 70 && acceptedData <= 100) {
     return const Text(
-      "Alright! Select 1 task I can do for you! 🧪",
+      "You're almost there! Just a little more.. 🍬",
       style: TextStyle(
         letterSpacing: 2.0,
         color: Colors.white,
@@ -53,8 +51,7 @@ Widget buildNarrative(int acceptedData) {
         fontWeight: FontWeight.bold,
       ),
     );
-  }
-  else {
+  } else {
     return const Text(
       "You are the best! 💖 Select a task I can do for you! ✅",
       style: TextStyle(

@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:lakehmon/costumes_screen.dart';
+import 'package:lakehmon/recommend_movies_screen.dart';
+import 'package:get/get.dart';
+// import 'nrf_stats_screen.dart';
 import 'products.dart';
 import 'package:flutter/services.dart';
 import 'package:rive/rive.dart';
@@ -74,10 +78,9 @@ class _MonsterScreenState extends State<MonsterScreen> {
     final dWidth = MediaQuery.of(context).size.width;
 
     return SafeArea(
-      child: 
-      Scaffold(
+      child: Scaffold(
         // backgroundColor: const Color.fromARGB(255, 197, 39, 39),
-        backgroundColor: Color.fromARGB(255, 0, 0, 0),
+        backgroundColor: const Color.fromARGB(255, 0, 0, 0),
         // appBar: AppBar(
         //   title: Text(
         //     "Score: $acceptedData",
@@ -94,10 +97,8 @@ class _MonsterScreenState extends State<MonsterScreen> {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            
             Expanded(
               child: SizedBox(
-                width: dWidth,
                 child: _eriveArtboard == null
                     ? const Text('')
                     : Rive(
@@ -159,91 +160,163 @@ class _MonsterScreenState extends State<MonsterScreen> {
                 ],
               ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: acceptedData<0?[]:[
-                Expanded(
-                  child: SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.2,
-                    child: Draggable(
-                      data: 10,
-                      feedback: Material(
-                        color: Colors.transparent,
-                        child: buildItem(products[0].name, products[0].image,
-                            dWidth * .15, dHeight * .1),
-                      ),
-                      child: buildItem(products[0].name, products[0].image,
-                          dWidth * .15, dHeight * .1),
+            (acceptedData > 100)
+                ? Expanded(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        IconButton(
+                            onPressed: () {
+                              Get.deleteAll();
+                              Get.to(() => const RecommendMovies());
+                            },
+                            iconSize: 100,
+                            tooltip: 'Recommend Scary Movies 👻',
+                            color: Colors.redAccent,
+                            icon: const Icon(Icons.movie)),
+                        IconButton(
+                            onPressed: () {
+                              Get.deleteAll();
+                              Get.to(() => const RecommendCostumes());
+                            },
+                            iconSize: 100,
+                            tooltip: 'Recommend Halloween Costumes 🎃',
+                            color: Colors.redAccent,
+                            icon: const Icon(Icons.face)),
+                        // IconButton(
+                        //     onPressed: () {
+                        //       // Get.to(() => const NRFStatsViewPage());
+                        //     },
+                        //     iconSize: 50,
+                        //     tooltip:
+                        //         'Funny Halloween jokes 😆',
+                        //     color: Colors.redAccent,
+                        //     icon: const Icon(Icons.emoji_emotions)),
+                      ],
                     ),
+                  )
+                : Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: acceptedData < 0
+                        ? []
+                        : [
+                            Expanded(
+                              child: SizedBox(
+                                height:
+                                    MediaQuery.of(context).size.height * 0.2,
+                                child: Draggable(
+                                  data: 10,
+                                  feedback: Material(
+                                    color: Colors.transparent,
+                                    child: buildItem(
+                                        products[0].name,
+                                        products[0].image,
+                                        dWidth * .15,
+                                        dHeight * .1),
+                                  ),
+                                  child: buildItem(
+                                      products[0].name,
+                                      products[0].image,
+                                      dWidth * .15,
+                                      dHeight * .07),
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: SizedBox(
+                                height:
+                                    MediaQuery.of(context).size.height * 0.2,
+                                child: Draggable(
+                                  data: 20,
+                                  feedback: Material(
+                                    color: Colors.transparent,
+                                    child: buildItem(
+                                        products[1].name,
+                                        products[1].image,
+                                        dWidth * .15,
+                                        dHeight * .1),
+                                  ),
+                                  child: buildItem(
+                                      products[1].name,
+                                      products[1].image,
+                                      dWidth * .15,
+                                      dHeight * .07),
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: SizedBox(
+                                height:
+                                    MediaQuery.of(context).size.height * 0.2,
+                                child: Draggable(
+                                  data: 30,
+                                  feedback: Material(
+                                    color: Colors.transparent,
+                                    child: buildItem(
+                                        products[2].name,
+                                        products[2].image,
+                                        dWidth * .15,
+                                        dHeight * .1),
+                                  ),
+                                  child: buildItem(
+                                      products[2].name,
+                                      products[2].image,
+                                      dWidth * .15,
+                                      dHeight * .07),
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: SizedBox(
+                                height:
+                                    MediaQuery.of(context).size.height * 0.2,
+                                child: Draggable(
+                                  data: -45,
+                                  feedback: Material(
+                                    color: Colors.transparent,
+                                    child: buildItem(
+                                        products[3].name,
+                                        products[3].image,
+                                        dWidth * .15,
+                                        dHeight * .1),
+                                  ),
+                                  child: buildItem(
+                                      products[3].name,
+                                      products[3].image,
+                                      dWidth * .15,
+                                      dHeight * .07),
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: SizedBox(
+                                height:
+                                    MediaQuery.of(context).size.height * 0.2,
+                                child: Draggable(
+                                  data: 50,
+                                  feedback: Material(
+                                    color: Colors.transparent,
+                                    child: buildItem(
+                                        products[4].name,
+                                        products[4].image,
+                                        dWidth * .15,
+                                        dHeight * .1),
+                                  ),
+                                  child: buildItem(
+                                      products[4].name,
+                                      products[4].image,
+                                      dWidth * .15,
+                                      dHeight * .07),
+                                ),
+                              ),
+                            ),
+                          ],
                   ),
-                ),
-                Expanded(
-                  child: SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.2,
-                    child: Draggable(
-                      data: 20,
-                      feedback: Material(
-                        color: Colors.transparent,
-                        child: buildItem(products[1].name, products[1].image,
-                            dWidth * .15, dHeight * .1),
-                      ),
-                      child: buildItem(products[1].name, products[1].image,
-                          dWidth * .15, dHeight * .1),
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.2,
-                    child: Draggable(
-                      data: 30,
-                      feedback: Material(
-                        color: Colors.transparent,
-                        child: buildItem(products[2].name, products[2].image,
-                            dWidth * .15, dHeight * .1),
-                      ),
-                      child: buildItem(products[2].name, products[2].image,
-                          dWidth * .15, dHeight * .1),
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.2,
-                    child: Draggable(
-                      data: -45,
-                      feedback: Material(
-                        color: Colors.transparent,
-                        child: buildItem(products[3].name, products[3].image,
-                            dWidth * .15, dHeight * .1),
-                      ),
-                      child: buildItem(products[3].name, products[3].image,
-                          dWidth * .15, dHeight * .1),
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.2,
-                    child: Draggable(
-                      data: 50,
-                      feedback: Material(
-                        color: Colors.transparent,
-                        child: buildItem(products[4].name, products[4].image,
-                            dWidth * .15, dHeight * .1),
-                      ),
-                      child: buildItem(products[4].name, products[4].image,
-                          dWidth * .15, dHeight * .1),
-                    ),
-                  ),
-                ),
-              ],
-            ),
           ],
         ),
         floatingActionButton: FloatingActionButton(
           foregroundColor: Colors.white,
-          backgroundColor: Colors.orange,
+          backgroundColor: Colors.redAccent,
           onPressed: () {
             setState(() {
               acceptedData = 10;

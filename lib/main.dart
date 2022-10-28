@@ -8,9 +8,19 @@ import 'package:lottie/lottie.dart';
 
 import 'loading_screen.dart';
 
-void main() => runApp(const GetMaterialApp(
-      home: MyApp(),
+void main() => runApp( GetMaterialApp(
+      home: const MyApp(),
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primaryTextTheme: const TextTheme(
+          bodyText1: TextStyle(
+            color: Colors.white,
+          ),
+        ),
+      ),
+      darkTheme: ThemeData.dark(),
+      themeMode: ThemeMode.dark,
+
     ));
 
 class MyApp extends StatelessWidget {
