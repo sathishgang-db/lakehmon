@@ -10,7 +10,7 @@ The repo shows how you can build cross platform applications with [Flutter](flut
 
 The web applications requires the intermediary - i.e. FASTAPI service to collect and send requests out to databricks while the desktop application does not. You can choose to try out the application in either way or both. 
 
-![Click here for a Quick Cross-Platform Demo](https://www.youtube.com/watch?v=kYHJo_7FRcU)
+[Click here for a Quick Cross-Platform Demo](https://www.youtube.com/watch?v=kYHJo_7FRcU)
 
 For reference,here's the complete architecture which assumes that you'd need the backend service
 
