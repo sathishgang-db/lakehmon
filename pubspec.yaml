@@ -39,7 +39,6 @@ dependencies:
     sdk: flutter
   font_awesome_flutter: ^10.2.1
   get: ^4.6.5
-  google_fonts: ^3.0.1
   lottie: ^1.4.3
   rive: ^0.9.1
   shared_preferences: ^2.0.15

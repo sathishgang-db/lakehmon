@@ -18,7 +18,6 @@ class MovieSearchController extends GetxController {
     d.Response response = await dio.get(
       uri,
     );
-    print(response.data);
     simSearchResponse = response.data;
     recom1.value =
         simSearchResponse['predictions']['title'].entries.elementAt(0).value;

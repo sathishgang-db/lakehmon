@@ -2,7 +2,6 @@ import 'package:avatar_glow/avatar_glow.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 // import 'package:lakehmon/monster_screen.dart';
 import 'package:lottie/lottie.dart';
 
@@ -50,17 +49,15 @@ class MyApp extends StatelessWidget {
           Positioned(
             bottom: appHeight * 0.05,
             left: appWidth * 0.1,
-            child: AnimatedDefaultTextStyle(
-              duration: const Duration(seconds: 1),
-              style: GoogleFonts.eater(
-                letterSpacing: 3.0,
-                fontSize: 50,
-                fontWeight: FontWeight.bold,
-              ),
+            child: AnimatedContainer(
+              duration: const Duration(seconds: 3),
+              curve: Curves.easeIn,
               child: const Text(
-                "🎃 HAUNTED LAKEHOUSE ",
-              ),
+                  "🎃 HAUNTED LAKEHOUSE ",
+                  style: TextStyle(fontSize: 50, letterSpacing: 3.0),
+                ),
             ),
+          
           ),
         ]),
         floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
