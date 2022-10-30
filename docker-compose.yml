@@ -1,0 +1,13 @@
+services:
+  lakehmon:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8080:5000"
+  api4lakehmon:
+    build: 
+      context: ./lakehmon-backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:80"
