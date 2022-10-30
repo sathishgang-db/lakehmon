@@ -24,3 +24,13 @@ To reproduce demo:
 3. From the terminal `flutter run -d chrome`
 4. Make sure the [backend service](https://github.com/sathishgang-db/lakehmon-backend) is running. If not, close the [repo](https://github.com/sathishgang-db/lakehmon-backend) & follow the steps on the repo's readme.
 5. Enjoy the demo!
+
+----
+```Note:```
+This demo uses the following datasets from kaggle to pull recommendations
+
+a. Halloween Costume recommendations based on [this dataset](https://www.kaggle.com/datasets/thomaskonstantin/popular-halloween-costumes-amazon-reviews) on Kaggle.
+
+b. Horror movie recommendations based on [this dataset](https://www.kaggle.com/datasets/PromptCloudHQ/imdb-horror-movie-dataset) on Kaggle.
+
+------
