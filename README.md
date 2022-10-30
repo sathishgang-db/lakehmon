@@ -27,7 +27,7 @@ To reproduce demo:
 
 ----
 ```Note:```
-This demo uses the following datasets from kaggle to pull recommendations
+This demo uses the following datasets to make recommendations
 
 a. Halloween Costume recommendations based on [this dataset](https://www.kaggle.com/datasets/thomaskonstantin/popular-halloween-costumes-amazon-reviews) on kaggle.
 
