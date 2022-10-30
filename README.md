@@ -22,5 +22,5 @@ To reproduce demo:
     -  On [Mac](https://docs.flutter.dev/get-started/install/macos#system-requirements). Go through the install guide until `flutter doctor` to ensure flutter is set up properly.
 2. Clone repo to your machine
 3. From the terminal `flutter run -d chrome`
-4. Make sure the [backend service](https://github.com/sathishgang-db/lakehmon-backend) is running.
+4. Make sure the [backend service](https://github.com/sathishgang-db/lakehmon-backend) is running. If not, close the [repo](https://github.com/sathishgang-db/lakehmon-backend) & follow the steps on the repo's readme.
 5. Enjoy the demo!
