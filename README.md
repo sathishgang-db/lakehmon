@@ -29,8 +29,15 @@ To reproduce demo:
 ```Note:```
 This demo uses the following datasets from kaggle to pull recommendations
 
-a. Halloween Costume recommendations based on [this dataset](https://www.kaggle.com/datasets/thomaskonstantin/popular-halloween-costumes-amazon-reviews) on Kaggle.
+a. Halloween Costume recommendations based on [this dataset](https://www.kaggle.com/datasets/thomaskonstantin/popular-halloween-costumes-amazon-reviews) on kaggle.
 
-b. Horror movie recommendations based on [this dataset](https://www.kaggle.com/datasets/PromptCloudHQ/imdb-horror-movie-dataset) on Kaggle.
+b. Horror movie recommendations based on [this dataset](https://www.kaggle.com/datasets/PromptCloudHQ/imdb-horror-movie-dataset) on kaggle.
 
 ------
+
+**To build and deploy:**
+This is an <i>optional</i> step for anyone interested in deploying the app. Since the app uses heavy animations & elaborate state management, it's best to deploy it on a separate VM following the standard flutter web deploy recommendations. 
+
+1. Build the release package: Run `flutter build web` on the terminal. This will generate the js and the files needed to host the app on your server.
+2. Move files on the `build/web` folder to your server
+3. Run `dhttpd` or a set up a web server from this folder on your server. See [here in the official flutter docs](https://docs.flutter.dev/deployment/web#building-the-app-for-release).
