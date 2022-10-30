@@ -40,4 +40,4 @@ This is an <i>optional</i> step for anyone interested in deploying the app. Sinc
 
 1. Build the release package: Run `flutter build web` on the terminal. This will generate the js and the files needed to host the app on your server.
 2. Move files on the `build/web` folder to your server
-3. Run `dhttpd` or a set up a web server from this folder on your server. See [here in the official flutter docs](https://docs.flutter.dev/deployment/web#building-the-app-for-release).
+3. Run `dhttpd` or launch a web server targetting this folder on your server. See [here in the official flutter docs](https://docs.flutter.dev/deployment/web#building-the-app-for-release).
