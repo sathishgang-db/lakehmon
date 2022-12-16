@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)"
+options: "79aef02e90101e4374d32f07dca42413333317180c201b33b648567cfb3a4aac"
+build_start_time: [1669909777, 150068044]
+build_end_time: [1669909783, 736123085]
+inputs:
+  "/Users/sathish.gangichetty/projects/lakehmon/lakehmon/macos/Flutter/GeneratedPluginRegistrant.swift": [1669909766, 931972503]
+  "/Users/sathish.gangichetty/projects/lakehmon/lakehmon/macos/Runner/AppDelegate.swift": [1639683103, 0]
+  "/Users/sathish.gangichetty/projects/lakehmon/lakehmon/macos/Runner/MainFlutterWindow.swift": [1639683103, 0]
